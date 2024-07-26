@@ -37,7 +37,7 @@ const IntroText: React.FC<IntroTextProps> = ({introTextIsVisible}) => {
     }
   }, [scrollY, isMobile, isTablet]);
 
-  const text = "Software in a bright ligh";
+  const text = "Software in a bright ";
 
   useEffect(() => {
     if (introTextIsVisible) {

@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body className={inter.className}>{children}</body>
