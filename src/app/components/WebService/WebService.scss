@@ -20,11 +20,10 @@
       min-height: 900px;
     }
 
-    @media screen 
-    and (device-width: 412px) 
-    and (device-height: 823px) 
-    and (-webkit-device-pixel-ratio: 3.5) 
-    and (orientation: portrait) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
       flex-direction: column-reverse;
       justify-content: center;
       height: auto;
@@ -58,11 +57,10 @@
       min-height: 640px;
     }
 
-    @media screen 
-    and (device-width: 412px) 
-    and (device-height: 823px) 
-    and (-webkit-device-pixel-ratio: 3.5) 
-    and (orientation: portrait) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
       width: 100%;
       min-height: 700px;
       margin-bottom: -30px;
@@ -103,11 +101,10 @@
         right: -8px;
       }
 
-      @media screen 
-      and (device-width: 412px) 
-      and (device-height: 823px) 
-      and (-webkit-device-pixel-ratio: 3.5) 
-      and (orientation: portrait) {
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
         width: 400px; 
         height: auto;
         right: 0;
@@ -158,11 +155,10 @@
         top: 320px;
       }
 
-      @media screen 
-      and (device-width: 412px) 
-      and (device-height: 823px) 
-      and (-webkit-device-pixel-ratio: 3.5) 
-      and (orientation: portrait) {
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
         top: 480px;
         left: 72px;
         width: 150px;
@@ -185,11 +181,10 @@
           top: 42px;
         }
 
-        @media screen 
-        and (device-width: 412px) 
-        and (device-height: 823px) 
-        and (-webkit-device-pixel-ratio: 3.5) 
-        and (orientation: portrait) {
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+        only screen and (-min--moz-device-pixel-ratio: 2), 
+        only screen and (-o-min-device-pixel-ratio: 20/9), 
+        only screen and (min-device-pixel-ratio: 2) {
           width: 60px;
           height: 60px;
           top: 42px;
@@ -218,11 +213,10 @@
       text-align: center;
     }
 
-    @media screen 
-        and (device-width: 412px) 
-        and (device-height: 823px) 
-        and (-webkit-device-pixel-ratio: 3.5) 
-        and (orientation: portrait) {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
           width: 100%;
           text-align: center;
         }
@@ -240,11 +234,10 @@
         font-size: 30px;
       }
 
-      @media screen 
-        and (device-width: 412px) 
-        and (device-height: 823px) 
-        and (-webkit-device-pixel-ratio: 3.5) 
-        and (orientation: portrait) {
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
           font-size: 30px;
         }
     }
@@ -264,11 +257,10 @@
         margin-top: 30px;
       }
 
-      @media screen 
-      and (device-width: 412px) 
-      and (device-height: 823px) 
-      and (-webkit-device-pixel-ratio: 3.5) 
-      and (orientation: portrait) {
+      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
         font-size: 15px;
         margin-top: 30px;
       }

@@ -32,7 +32,7 @@
   }
 
   @media screen and (width <= 430px) and (orientation: portrait) {
-    width: 289.28px;
+    width: 380px;
     height: 59.91px;
     mask-size: 289.28px 60.52px;
     background-size: 289.28px 59.91px;
@@ -54,15 +54,15 @@
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-       only screen and (-min--moz-device-pixel-ratio: 2), 
-       only screen and (-o-min-device-pixel-ratio: 20/9), 
-       only screen and (min-device-pixel-ratio: 2) {
-    width: 289.28px;
-    height: 59.91px;
-    mask-size: 289.28px 60.52px;
-    background-size: 289.28px 59.91px;
+    only screen and (-min--moz-device-pixel-ratio: 2), 
+    only screen and (-o-min-device-pixel-ratio: 20/9), 
+    only screen and (min-device-pixel-ratio: 2) {
+    width: 380px;
+    height: 70px;
+    mask-size: 380px 70px;
+    background-size: 380px 70px;
     background-position: 0;
-    left: calc(50% - 142.6px);
+    left: calc(50% - 190px);
     top: 103.21px;
     z-index: 50; 
   }
@@ -107,10 +107,10 @@
     }
 
     @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-       only screen and (-min--moz-device-pixel-ratio: 2), 
-       only screen and (-o-min-device-pixel-ratio: 20/9), 
-       only screen and (min-device-pixel-ratio: 2) {
-      height: 100px;
+      only screen and (-min--moz-device-pixel-ratio: 2), 
+      only screen and (-o-min-device-pixel-ratio: 20/9), 
+      only screen and (min-device-pixel-ratio: 2) {
+      height: 70px;
     }
   }
 
