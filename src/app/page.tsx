@@ -26,7 +26,7 @@ export default function MainPage({}) {
     const [showCursor, setShowCursor] = useState(false);
     const [animatedCursor, setAnimatedCursor] = useState(false);
     const [lockScreen, setLockScreen] = useState(false);
-    const [activeItem, setActiveItem] = useState('home');
+    const [activePage, setActivePage] = useState('home');
 
     const mainRef = useRef(null);
 
@@ -168,11 +168,11 @@ export default function MainPage({}) {
 
     useEffect(() => {
         if (homeRef.isVisible) {
-            setActiveItem('home');
+            setActivePage('home');
         } else if (ourServicesRef.isVisible) {
-            setActiveItem('our-services');
+            setActivePage('our-services');
         } else if (constactUsRef.isVisible) {
-            setActiveItem('contact-us');
+            setActivePage('contact-us');
         }
     }, [ homeRef, ourServicesRef, constactUsRef ]);
     
@@ -230,7 +230,7 @@ export default function MainPage({}) {
                             onMouseLeave={handleLeaveCursor}
                         />
                         <Menu
-                            activeItem={activeItem}
+                            activeItem={activePage}
                             showMenu={handleShowMenu}
                             active={active}
                             onLinkClick={handleLinkClick}
