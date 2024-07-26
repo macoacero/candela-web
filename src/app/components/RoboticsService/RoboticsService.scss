@@ -19,8 +19,8 @@
       min-height: 800px;
     }
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+    @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
       flex-direction: column;
@@ -48,8 +48,8 @@
       background-position: center top;
     }
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+    @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
       width: 100%;
@@ -80,8 +80,8 @@
         left: 10px;
       }
 
-      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+      @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
         width: 314px;
@@ -130,8 +130,8 @@
       font-size: 7rem;
     }
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+    @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
         top: 340px;
@@ -154,8 +154,8 @@
         width: 60px;
       }
 
-      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+      @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
         width: 60px;
@@ -186,8 +186,8 @@
       text-align: center;
     }
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+    @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
         width: 100%;
@@ -207,8 +207,8 @@
         font-size: 30px;
       }
 
-      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+      @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
         font-size: 30px;
@@ -231,8 +231,8 @@
         margin-top: 30px;
       }
 
-      @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-      only screen and (-min--moz-device-pixel-ratio: 2), 
+      @media only screen and (width <= 412px),
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
       only screen and (-o-min-device-pixel-ratio: 20/9), 
       only screen and (min-device-pixel-ratio: 2) {
         font-size: 15px;
