@@ -50,13 +50,17 @@ export default function MainPage({}) {
     const [cookiespolicyVisible, setCookiespolicyVisible] = useState<string | null>(null);
 
     useEffect(() => {
-        const storedPolicy = window.localStorage.getItem('modalVisible');
-        setCookiespolicyVisible(storedPolicy === null ? 'true' : storedPolicy);
+        if(window !== undefined) {
+            const storedPolicy = window.localStorage.getItem('modalVisible');
+            setCookiespolicyVisible(storedPolicy === null ? 'true' : storedPolicy);
+        }
     }, []);
 
     useEffect(() => {
         if (cookiespolicyVisible !== null) {
-            window.localStorage.setItem('modalVisible', cookiespolicyVisible);
+            if(window !== undefined) {
+                window.localStorage.setItem('modalVisible', cookiespolicyVisible);
+            }
         }
     }, [cookiespolicyVisible]);
 
@@ -149,23 +153,7 @@ export default function MainPage({}) {
         setShowCursor(false);
     };
 
-    function isNavigationBarVisible() {
-        const windowHeight = window.innerHeight;
-        const screenHeight = window.screen.height;
     
-        // Verifica si hay una diferencia notable en las alturas
-        return screenHeight - windowHeight > 100; // Ajusta el valor según tus pruebas
-    }
-
-    window.addEventListener('resize', () => {
-        // Ejecutar la lógica necesaria cuando cambia el tamaño de la ventana
-        if (isNavigationBarVisible()) {
-            console.log("La barra de navegación está visible.");
-        } else {
-            console.log("La barra de navegación no está visible.");
-        }
-    });
-
     useEffect(() => {
         if (homeRef.isVisible) {
             setActivePage('home');
