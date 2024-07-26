@@ -230,7 +230,7 @@ export default function MainPage({}) {
                             onMouseLeave={handleLeaveCursor}
                         />
                         <Menu
-                            activeItem={activePage}
+                            activePage={activePage}
                             showMenu={handleShowMenu}
                             active={active}
                             onLinkClick={handleLinkClick}

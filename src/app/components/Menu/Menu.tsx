@@ -5,13 +5,13 @@ import { usePathname } from 'next/navigation';
 
 interface MenuProps {
     active: boolean;
-    activeItem: string;
     showMenu: () => void;
     onLinkClick: (targetId: string) => void; 
     handleContactUsClick?: () => void;
     isDesktop: boolean;
     onMouseEnter: () => void;
     onMouseLeave: () => void;
+    activePage: string;
 }
 
 const Menu: React.FC<MenuProps> = ({ 
@@ -22,7 +22,7 @@ const Menu: React.FC<MenuProps> = ({
     onMouseEnter, 
     onMouseLeave, 
     handleContactUsClick,
-    activeItem
+    activePage
 }) => {
     
     const pathname = usePathname();
@@ -89,10 +89,10 @@ const Menu: React.FC<MenuProps> = ({
                     null
             }
             <ul>
-                <li><a onClick={() => handleLinkClick('home')} className={activeItem === 'home' ? 'active-item' : ''}>Home</a></li>
+                <li><a onClick={() => handleLinkClick('home')} className={activePage === 'home' ? 'active-item' : ''}>Home</a></li>
                 {/* <li><a onClick={() => handleLinkClick('development')}>Section</a></li> */}
-                <li><a onClick={() => handleLinkClick('our-services')} className={activeItem === 'our-services' ? 'active-item' : ''}>Services</a></li>
-                <li><a onClick={() => handleLinkClick('contact-us')} className={activeItem === 'contact-us' ? 'active-item' : ''}>Contact Us</a></li>
+                <li><a onClick={() => handleLinkClick('our-services')} className={activePage === 'our-services' ? 'active-item' : ''}>Services</a></li>
+                <li><a onClick={() => handleLinkClick('contact-us')} className={activePage === 'contact-us' ? 'active-item' : ''}>Contact Us</a></li>
             </ul>
             {!isDesktop && (
                 <div className='copyright'>

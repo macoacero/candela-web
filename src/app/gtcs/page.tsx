@@ -200,6 +200,7 @@ export default function Abg() {
                 onMouseEnter={handleMenuIconMouseEnter}
                 onMouseLeave={handleMenuIconMouseLeave}
                 handleContactUsClick={handleContactUsClick}
+                activePage='contact-us'
             />
             <FixedFrame zIndex={401} />
             <div className="bg" style={{ display: showContent}}></div>
