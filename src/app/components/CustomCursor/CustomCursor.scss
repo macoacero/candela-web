@@ -1,0 +1,64 @@
+@import '_variables.scss';
+
+.cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+
+  svg {
+    &.animated-cursor {
+      transform: scale(1.5);
+
+      .point {
+        animation: expand-cursor 1s forwards;
+        transform-origin: center;
+      }
+    }
+  }
+
+  @keyframes expand-cursor {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(4) ;
+        opacity: 1;
+    }
+}
+
+}
+
+.image {
+  display: block;
+}
+
+.line {
+  position: fixed;
+  top: 50%;
+  left: calc(-50vw - 48px / 2);
+  width: 400vw;
+  height: 1px;
+  border-top: 1px dashed rgb(255 255 255);
+  transform: translateX(-50%) translateY(-50%);
+
+  &.blue {
+    display: none;
+  }
+}
+
+.coordinates {
+  position: fixed;
+  pointer-events: none;
+  padding: 4px;
+  border-radius: 4px;
+  color: $white; 
+  font-size: 12px;
+  z-index: 1000; 
+  transform: none !important;
+  
+  &.blue {
+    display: none;
+  }
+}

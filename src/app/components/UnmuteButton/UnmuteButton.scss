@@ -1,0 +1,141 @@
+@import '_variables.scss';
+
+.unmute-button {
+    position: absolute;
+    right: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    top: auto;
+    z-index: 500;
+
+    @media (width <= 1024px) and (orientation: portrait) {
+        position: fixed;
+        right: 20px
+    }
+
+    button {
+        background: transparent;
+        border: none;
+        color: white;
+        position: relative;
+    }
+
+    &.fixed {
+        position: fixed;
+        bottom: 7rem;
+        right: 7rem;
+
+        @media screen and (width <= 1024px) {
+            bottom: auto;
+        }
+
+        @media screen and (width <= 834px) {
+            position: fixed;
+            right: 50px;
+            bottom: auto;
+        }
+
+        @media screen and (width <= 430px) {
+            top: 20px;
+            right: 20px;
+        }
+
+        .range-input {
+            right: 3.5rem;
+            bottom: 9rem;
+        }
+    }
+
+    span {
+        font-family: $primary-font;
+        font-size: 2rem;
+        color: white;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+            display: none;
+        }
+    }
+
+    .image {
+        width: 8rem;
+        height: 8rem;
+        margin-left: 1rem;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+            width: 16rem;
+            height: 16rem;
+        }
+
+        @media screen and (width <= 834px) {
+            width: 70px;
+            height: 70px;
+        }
+
+        @media screen and (width <= 430px) {
+            width: 40px;
+            height: 40px;
+            margin-left: 0; 
+        }
+
+        &:hover {
+            .circle {
+                @media (width >= 430px) {
+                stroke: none;
+                }
+            }
+        }
+    }
+
+    
+input[type="range"] {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+    z-index: 500;
+    appearance: none;
+    width: 10px;
+    height: 70px;
+    background: transparent;
+    border: 1px solid $white;
+    outline: none;
+    opacity: 0.5;
+    transition: .2s;
+    transition: opacity .2s;
+    border-radius: 4px;
+    position: absolute;
+    right: 3rem;
+    bottom: -9rem;
+    
+      &:hover {
+        opacity: 1;
+        cursor: none;
+      }
+      
+      &::-webkit-slider-thumb {
+        appearance: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background: $white;
+        cursor: pointer;
+
+        &:hover {
+            cursor: none;
+          }
+      }
+      
+      &::-moz-range-thumb {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background: $white;
+        cursor: pointer;
+
+        &:hover {
+            cursor: none;
+          }
+      }
+    }
+}

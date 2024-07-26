@@ -1,0 +1,98 @@
+@import 'fonts.scss';
+@import '_variables.scss';
+
+.animated-text {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 7rem; 
+    white-space: nowrap;
+    font-family: $primary-font;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1;
+    top: 85rem;
+    opacity: 1;
+    animation: fade-in 4s forwards ease-out;
+    animation-delay: 1s;
+          
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @media (width <= 1024px) and (orientation: portrait) {
+      font-size: 12rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 73vh;
+    }
+
+    @media (width = 820px) and (height = 1180px) {
+      font-size: 12rem;
+    }
+
+    @media (width <= 768px) {
+      top: 73vh;
+      font-size: 11rem;
+    }
+
+    @media (width = 768px) and (height = 1024px) {
+      top: 76vh;
+      font-size: 15rem;
+    }
+
+    @media (width = 320px) and (height = 568px) {
+      top: 75vh;
+    }
+
+    @media screen 
+    and (device-width: 412px) 
+    and (device-height: 823px) 
+    and (-webkit-device-pixel-ratio: 3.5) 
+    and (orientation: portrait) {
+      font-size: 9rem;
+    }
+  
+    &.fixed {
+      position: fixed;
+    }
+  
+    &.absolute {
+      position: absolute;
+    }
+
+    .letter {
+      transition: opacity 0.3s ease-in-out;
+
+      @media screen and (width <= 1024px) and (orientation: portrait) {
+        opacity: 0;
+        animation: fade-in 3s forwards ease-out;
+        line-height: 1;
+      }
+
+      &.visible {
+        opacity: 1;
+      }
+  
+      &.hidden {
+        opacity: 0;
+      }
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }     
+
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,252 @@
+@import '_variables.scss';
+@import 'fonts.scss';
+
+.app-service {
+    position: relative;
+    width: calc(100% - 50rem);
+    display: flex;
+    margin-top: 20rem;
+
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    @media screen and (width <= 430px) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      margin-top: 30px;
+      min-height: 920px;
+    }
+
+    @media screen 
+    and (device-width: 412px) 
+    and (device-height: 823px) 
+    and (-webkit-device-pixel-ratio: 3.5) 
+    and (orientation: portrait) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      margin-top: 30px;
+      min-height: 920px;
+    }
+
+  .image-container {
+    position: relative;
+    width: 50%;
+    height: 110.3rem;
+    background-image: url('../../../../public/app-text.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (width <= 843px) and (orientation: portrait) {
+      height: 670px;
+    }
+
+    @media screen and (width <= 430px) and (orientation: portrait) {
+      background-position: center 0;
+      width: 100%;
+      height: 610px;
+    }
+
+    @media screen 
+    and (device-width: 412px) 
+    and (device-height: 823px) 
+    and (-webkit-device-pixel-ratio: 3.5) 
+    and (orientation: portrait) {
+      background-position: center 0;
+      width: 100%;
+      height: 610px;
+    }
+
+    .image-app {
+      position: absolute;
+      top: 33rem;
+      left: 0;
+      width: 57.8rem;
+      height: auto;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      mask-image: linear-gradient(#0050FF 80%, transparent);
+
+      &.visible {
+        opacity: 1;
+      }
+
+      &.hidden {
+        opacity: 0;
+      }
+
+      @media screen and (width <= 843px) and (orientation: portrait) {
+        width: 300px;
+        height: auto;
+        top: 120px;
+      }
+
+      @media screen and (width <= 430px) {
+        top: 150px;
+        left: 0;
+        width: 300px;
+      }
+
+      @media screen and (width <= 344px) {
+        width: 280px;
+      }
+
+      @media screen 
+      and (device-width: 412px) 
+      and (device-height: 823px) 
+      and (-webkit-device-pixel-ratio: 3.5) 
+      and (orientation: portrait) {
+        top: 150px;
+        left: 0;
+        width: 300px;
+      }
+    }
+
+    .circle {
+      position: absolute;
+      top: 90rem;
+      left: 34rem;
+      width: 28rem;
+      height: 28rem;
+      background: #F9D7E4;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-color;
+      font-family: $primary-font;
+      font-size: 3.6rem;
+
+      @media screen and (width <= 843px) and (orientation: portrait) {
+        width: 140px;
+        height: 140px;
+        top: 380px;
+        left: 200px;
+      }
+
+      @media screen and (width <= 430px) {
+        top: 440px;
+        left: 168px;
+        width: 130px;
+        height: 130px;
+        font-size: 7rem;
+      }
+
+      @media screen and (width <= 344px) {
+        top: 400px;
+      }
+
+      @media screen 
+      and (device-width: 412px) 
+      and (device-height: 823px) 
+      and (-webkit-device-pixel-ratio: 3.5) 
+      and (orientation: portrait) {
+        top: 440px;
+        left: 168px;
+        width: 130px;
+        height: 130px;
+        font-size: 7rem;
+      }
+      
+      .text{
+        width: 12rem;
+        line-height: 1;
+
+        @media screen and (width <= 843px) and (orientation: portrait) {
+          margin-left: 0;
+        }
+
+        @media screen and (width <= 430px) {
+          width: 80px;
+        }
+
+        @media screen 
+        and (device-width: 412px) 
+        and (device-height: 823px) 
+        and (-webkit-device-pixel-ratio: 3.5) 
+        and (orientation: portrait) {
+          width: 80px;
+        }
+        
+      }
+    }
+  }
+
+  .text-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      width: 50%;
+    }
+
+    @media screen and (width <= 430px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @media screen 
+        and (device-width: 412px) 
+        and (device-height: 823px) 
+        and (-webkit-device-pixel-ratio: 3.5) 
+        and (orientation: portrait) {
+        }
+
+    h2 {
+      font-size: 6rem;
+      font-family: $primary-font;
+      width: 63.4rem;
+
+      @media screen and (width <= 1024px) and (orientation: portrait) {
+        width: 100%;
+      }
+
+      @media screen and (width <= 430px) {
+        font-size: 30px;
+      }
+
+      @media screen 
+        and (device-width: 412px) 
+        and (device-height: 823px) 
+        and (-webkit-device-pixel-ratio: 3.5) 
+        and (orientation: portrait) {
+          font-size: 30px;
+        }
+    }
+
+    p {
+      font-size: 3.2rem;
+      font-family: $secondary-font;
+      margin-top: 5rem;
+      width: 63.4rem;
+
+      @media screen and (width <= 1024px) and (orientation: portrait) {
+        width: 100%;
+      }
+
+      @media screen and (width <= 430px) {
+        font-size: 15px;
+        margin-top: 30px;
+      }
+
+      @media screen 
+        and (device-width: 412px) 
+        and (device-height: 823px) 
+        and (-webkit-device-pixel-ratio: 3.5) 
+        and (orientation: portrait) {
+          font-size: 15px;
+          margin-top: 30px;
+        }
+    }
+  }
+}

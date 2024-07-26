@@ -1,0 +1,99 @@
+@import '_variables.scss';
+
+.menu-icon {
+    width: 4.5rem;
+    height: 2.5rem;
+    position: fixed;
+    top: 7rem;
+    left: 7rem;
+    z-index: 500;
+    transition: all 0.5s ease;
+
+    @media (width <= 1024px) and (orientation: portrait) {
+      width: 15rem;
+      height: 8rem;
+      top: 14rem;
+      left: 14rem;
+    }
+
+    @media screen and (width <= 834px) {
+      width: 40px;
+      height: 20px;
+      top: 70px;
+      left: 70px;
+    }
+
+    @media screen and (width <= 430px) {
+      width: 25px;
+      height: 16px;
+      top: 25px;
+      left: 20px;
+    }
+
+    &.active{
+        top: 12rem;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+          top: 14rem;
+          left: 14rem;
+        }
+
+        @media screen and (width <= 390px) {
+          top: 30px;
+        }
+    }
+
+    @media screen and (width = 540px) and (height = 720px) {
+      width: 10rem;
+      height: 5rem;
+    }
+  
+    #trigger {
+      position: absolute;
+      left: -9999px;
+    }
+  
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      
+      &:hover {
+        cursor: none;
+      }
+    }
+  
+    .icon-line {
+      height: 2px;
+      background-color: $white; 
+      transition: all 0.3s ease;
+    }
+
+    #trigger:checked + label .icon-line:nth-child(1) {
+      transform: translateY(1.25rem) rotate(45deg);
+    }
+  
+    #trigger:checked + label .icon-line:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #trigger:checked + label .icon-line:nth-child(3) {
+      transform: translateY(-1.15rem) rotate(-45deg);
+    }
+
+    @media (width <= 1024px) and (orientation: portrait) {
+      #trigger:checked + label .icon-line:nth-child(1) {
+        transform: none;
+      }
+    
+      #trigger:checked + label .icon-line:nth-child(2) {
+        opacity: 1;
+      }
+    
+      #trigger:checked + label .icon-line:nth-child(3) {
+        transform: none;
+      }
+    }
+  }
+  

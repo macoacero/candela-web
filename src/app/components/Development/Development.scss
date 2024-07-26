@@ -1,0 +1,108 @@
+.development{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 380rem;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  @media (width <= 1024px) and (orientation: portrait) {
+    height: 100vh;
+    top: 101vh;
+  }
+
+  &.fixed {
+    position: fixed;
+  }
+
+  .development-image {
+    width: 504.78rem;
+    height: 76.81rem;
+    margin-left: 79.5rem;
+    background-size: contain;
+
+    @media (width <= 1024px) and (orientation: portrait) {
+      width: 4150px;
+      height: 800px;
+      margin-left: 358.91px;
+      animation: move-from-left-to-right 5s forwards ease-in;
+      
+      @keyframes move-from-left-to-right {
+        0% {
+          margin-left: 200px;
+        }
+
+        100% {
+          margin-left: -3250px;
+        }
+      }
+    }
+
+    @media screen and (width <= 834px) {
+      width: 3800px;
+      height: 700px;
+      margin-left: 50px;
+
+      @keyframes move-from-left-to-right {
+        0% {
+          margin-left: 200px;
+        }
+
+        100% {
+          margin-left: -3100px;
+        }
+      }
+    }
+
+    @media screen and (width <= 768px) {
+      width: 3600px;
+      height: 600px;
+      margin-left: 50px;
+
+      @keyframes move-from-left-to-right {
+        0% {
+          margin-left: 200px;
+        }
+
+        100% {
+          margin-left: -2880px;
+        }
+      }
+    }
+
+    @media screen and (width <= 430px) {
+      width: auto;
+      height: 600px;
+
+      @keyframes move-from-left-to-right {
+        0% {
+          margin-left: 200px;
+        }
+
+        100% {
+          margin-left: -3560px;
+        }
+      }
+    }
+
+    @media screen and (width <= 390px) {
+        width: auto;
+        height: 396.5px;
+        margin-left: 30px;
+
+        
+      @keyframes move-from-left-to-right {
+        0% {
+          margin-left: 20rem;
+        }
+
+        100% {
+          margin-left: -2250px;
+        }
+      }
+    }
+  }    
+}

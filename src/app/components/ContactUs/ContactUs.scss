@@ -1,0 +1,385 @@
+@import 'fonts.scss';
+@import '_variables.scss';
+
+.contact-us {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 108rem;
+  left: 0;
+  display: flex;
+  padding: 5rem;
+  padding-bottom: 5rem;
+  opacity: 0;
+  animation: fade-in 0.5s forwards ease-out;
+  animation-delay: 0.5s;
+  z-index: 200;
+        
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (width <= 1024px) and (orientation: portrait) {
+    min-height: 100vh;
+    max-height: 2000px;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @media screen and (width <= 768px) {
+    padding-top: 50px;
+  }
+
+  @media screen and (width <= 430px) {
+    min-height: calc(100vh - 100px);
+    max-height: 2000px;
+    padding: 80px 10px 10.2px;
+  }
+  
+  .container-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 6rem 0 2.6rem 9rem;
+
+    @media (width <= 1024px) and (orientation: portrait) {
+      padding: 40rem 0 10rem;
+      align-items: center;
+      flex: none;
+    }
+
+    @media screen and (width <= 834px) {
+      padding: 130px 0 20px;
+    }
+
+    @media screen and (width <= 390px) {
+      padding: 0;
+    }
+
+    h1{
+      font-size: 14rem;
+      text-align: center;
+      line-height: 10rem;
+      font-family: $primary-font;
+      color: white;
+
+      @media (width <= 1024px) and (orientation: portrait) {
+        width: 100%;
+        font-size: 18rem;
+        line-height: 0.8;
+      }
+
+      @media screen and (width <= 834px) {
+        font-size: 22rem;
+      }
+
+      @media screen and (width <= 430px) {
+        font-size: 26rem;
+      }
+
+      @media screen and (width <= 390px) {
+        font-size: 32rem;
+        margin-bottom: 20px;
+      }
+
+      @media screen and (width = 540px) and (height = 720px) {
+        font-size: 20rem;
+      }
+
+      @media screen and (width <= 853px) and (height <= 1280px) {
+        font-size: 20rem;
+      }
+    }
+
+    .footer {
+      display: flex;
+      flex: 1;
+      align-items: flex-end;
+      color: white;
+
+      @media (width <= 1024px) and (orientation: portrait) {
+        display: none;
+      }
+
+      .footer-links {
+        display: flex;
+
+        &:hover {
+          cursor: none;
+      }
+      }
+    }
+  }
+
+  .container-right {
+    display: flex;
+    min-height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+
+    @media (width <= 1024px) and (orientation: portrait) {
+      height: auto;
+      min-height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+    }
+
+    .logo-container {
+      border-top: solid 0.3px $lines-color;
+      border-left: solid 0.3px $lines-color;
+      display: flex;
+      width: 100%;
+
+      @media (width <= 1024px) and (orientation: portrait) {
+        flex-direction: column;
+        align-items: center;
+        width: calc(100vw - 10rem);
+        height: 78rem;
+        flex: none;
+        border-left: 0;
+      }
+
+      @media screen and (width <= 430px) {
+        width: calc(100vw - 20.6px);
+        height: auto;
+      }
+
+      .show-contact-form {
+        &:hover {
+          color: $hover-color;
+        }
+      }
+
+      .logo {
+        padding: 6rem 4rem;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+          padding: 24px 0;
+        }
+
+        @media screen and (width <= 834px) {
+          padding: 16px 0;
+        }
+
+        @media screen and (width <= 430px) {
+          padding: 22px 0;
+        }
+
+        @media screen and (width <= 390px) {
+          padding: 24.6px 0;
+        }
+
+        @media screen and (height <= 740px) {
+          display: none;
+        }
+
+        @media screen and (width <= 853px) and (height <= 1280px) {
+          width: 180px;
+        }
+
+        img {
+            width: 29.32rem;
+            height: auto;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+              width: 150px;
+            }
+
+            @media screen and (width <= 834px) {
+              width: 160px
+            }
+
+            @media screen and (width <= 430px) {
+              width: 120px
+            }
+
+            @media screen and (width <= 390px) {
+              width: 120px
+            }
+
+            @media screen and (width <= 853px) and (height <= 1280px) {
+              width: 100%;
+            }
+        }
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-left: solid 0.5px $lines-color;
+        font-family: $secondary-font;
+        color: white;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+          border-left: none;
+          border-top: solid 0.5px $lines-color;
+          width: 100%;
+          text-align: center;
+          justify-content: flex-start;
+          padding: 0;
+          padding-bottom: 10rem;
+          height: auto;
+        }
+
+        .contact-info-link {
+          font-size: 4.8rem;
+          border-bottom: solid 0.5px $lines-color;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          height: 12rem;
+
+          a {
+            &:hover {
+              color: $hover-color;
+            }
+          }
+
+          @media (width <= 1024px) and (orientation: portrait) {
+            font-size: 10rem;
+            height: 100px;
+          }
+
+          @media screen and (width <= 843px) and (orientation: portrait) {
+            font-size: 10rem;
+          }
+
+          @media screen and (width <= 834px) {
+            font-size: 12rem;
+            padding: 10px 0;
+          }
+
+          @media screen and (width <= 430px) {
+            font-size: 14rem;
+            padding: 8px 0;
+            height: 80px;
+          }
+
+          @media screen and (width <= 390px) {
+            padding: 5px 0;
+          }
+
+          .text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: fade-text 12s infinite;
+          }
+          
+          .text:nth-child(1) {
+            animation-delay: 0s;
+          }
+          
+          .text:nth-child(2) {
+            animation-delay: 4s;
+          }
+          
+          .text:nth-child(3) {
+            animation-delay: 8s;
+          }
+          
+          @keyframes fade-text {
+            0%, 33.33% { opacity: 0; }
+            8.33%, 25% { opacity: 1; }
+            41.66%, 100% { opacity: 0; }
+          }
+        }
+
+        .contact-info-phone {
+          font-size: 2.4rem;
+          padding: 3rem 4.6rem;
+
+          @media (width <= 430px) {
+            padding: 20px 0;
+          }
+
+          p {
+              margin-top: 2rem;
+
+              @media (width <= 1024px) and (orientation: portrait) {
+                margin-top: 12px;
+                font-size: 5rem;
+              }
+
+              @media screen and (width <= 390px) {
+                margin-top: 16px;
+              }
+
+            &.email {
+              margin-top: 16px; 
+            }
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+
+          @media (width <= 1024px) and (orientation: portrait) {
+            font-size: 7rem;
+            padding: 10rem 8rem;
+          }
+
+          @media screen and (width <= 834px) {
+            font-size: 6rem;
+            padding: 6rem 8rem;
+          }
+
+          @media (aspect-ratio >= 0.75) and (aspect-ratio <= 0.68) and (width <= 1024px) {
+            font-size: 6rem;
+            padding: 6rem 8rem;
+          }
+
+          @media screen and (width <= 390px) {
+            padding: 6.2px 9.5px;
+          }
+        }
+
+        .contact-info-slogan {
+          display: flex;
+
+          @media (width <= 1024px) and (orientation: portrait) {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .slogan{
+            font-size: 1.6rem;
+            padding: 2.3rem 5.5rem 2.7rem 4.4rem;
+            flex: 60%;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+              display: none;
+            }
+          }
+
+          .footer-links {
+            display: none;
+
+            @media (width <= 1024px)  {
+              display: flex;
+              position: relative;
+              top: auto;
+              left: 0;
+              bottom: auto !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

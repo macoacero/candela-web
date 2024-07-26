@@ -1,0 +1,144 @@
+@import '_variables.scss';
+
+.cookiespolicy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #0009;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 600;
+
+    .cookies-policy {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60rem;
+        width: 106rem;
+        background: $white;
+        padding: 9.8rem 13.3rem 5.2rem;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+            width: 80%;
+            height: auto;
+            padding: 50px 20px 20px;
+        }
+
+        @media (width <= 430px) {
+            width: 80%;
+            padding: 50px 20px 20px;
+        }
+
+        h2 {
+            color: $secondary-color;  
+            margin-bottom: 3.2rem;
+            font-size: $primary-font;
+            text-align: center;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+                font-size: 9rem;
+                margin-bottom: 50px;
+            }
+
+            @media (width <= 430px) {
+                font-size: 12rem;
+                margin-bottom: 30px;
+            }
+
+            @media screen and (width <= 390px) {
+                font-size: 6rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        p {
+            color: #000;
+            line-height: 1.2;
+            text-align: center;
+            font-size: $secondary-font;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+                font-size: 4rem;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            @media (width <= 430px) {
+                font-size: 4rem;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (width <= 390px) {
+                font-size: 3.6rem;
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 6rem;
+            font-size: 1.8rem;
+
+            @media (width <= 430px) {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 27rem;
+                height: 4.8rem;
+                border: none;
+                font-size: $secondary-font;
+                cursor: none;
+
+                @media (width <= 1024px) and (orientation: portrait) {
+                    width: 44%;
+                    height: 10rem;
+                    font-size: 5rem;
+                    margin-left: 6%;
+
+                    &:last-child {
+                        margin-left: 0;
+                    }
+                }
+
+                @media (width <= 430px) {
+                    width: 100%;
+                    height: 30px;
+                    font-size: 5rem;
+                    margin-bottom: 10px;
+                    margin-left: 0;
+                }
+
+                @media screen and (width <= 390px) {
+                    font-size: 4rem;
+                }
+
+                &.decline {
+                    border: solid 1px $secondary-color;
+                    background: transparent;
+                    color: $secondary-color;
+                }
+
+                &.accept {
+                    background: $secondary-color;
+                    color: $white;
+                }
+
+                &:hover {
+                    background: $primary-color;
+                    color: $white;
+                    border: 0;
+                }
+
+            }
+        }
+    }
+}

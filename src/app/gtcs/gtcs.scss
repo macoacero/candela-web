@@ -1,0 +1,236 @@
+@import '_variables.scss';
+
+.gtcs {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+
+  .unmute-button {
+    bottom: auto !important;
+    top: 40px;
+
+    @media screen and (width <= 430px) {
+      top: 30px;
+    }
+  }
+  
+  .bg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(1 22 59 / 90%);
+    z-index: 400;
+    animation: fade-in 1s forwards ease-out;
+  }
+
+  .close-modal {
+    position: absolute;
+    z-index: 500;
+    top: 8rem;
+    right: 8rem;
+    cursor: pointer;
+    animation: fade-in 1s forwards ease-out;
+
+    @media screen and (width <= 430px) {
+      top: 20px;
+      right: 20px;
+    }
+
+    &:hover {
+      cursor: none;
+    }
+  }
+
+  .footer-links {
+    position: absolute;
+    z-index: 500;
+    bottom: 8rem;
+    left: 11rem;
+
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      bottom: 40px;
+
+      span {
+        display: none;
+      }
+    }
+
+    @media screen and (width <= 430px) {
+      width: calc(100% - 20px);
+      left: 10px;
+      bottom: 100px;
+    }
+  }
+
+  .version-legal {
+    display: none;
+    color: $white;
+    
+    @media screen and (width <= 430px) {
+    width: 100%;
+    position: absolute;
+    z-index: 500;
+    bottom: 50px;
+    left:0;
+    font-size: 7rem;
+    color: $white;
+    font-family: $secondary-font;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    }
+  }
+
+  .gtcs-content {
+    width: 93.7rem;
+    height: 75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    position: absolute;
+    z-index: 500;
+    top: 16.3rem;
+    left: calc(50% - 93.7rem / 2);
+
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      align-items: center;
+      width: 60%;
+      height: 36vh;
+      left: 20%;
+      top: 25%;
+    }
+
+    @media screen and (width <= 430px) {
+      width: calc(100% - 80px);
+      margin-left: 40px;
+      height: 60vh;
+      position: absolute;
+      top: auto;
+      bottom: 240px;
+      left: 0;
+    }
+
+    @media screen and (height <= 746px) {
+      height: 50vh;
+    }
+
+    @media screen and (height <= 719px) {
+      height: 44vh;
+    }
+
+    @media screen and (height <= 553px) {
+      height: 38vh;
+    }
+
+    h1 {
+        width: 93.7rem;
+        color: $white;
+        font-family: $secondary-font;
+        font-size: 6rem;
+        margin-bottom: 4rem;
+        font-weight: 200;
+
+        @media screen and (width <= 430px) {
+          flex: 1;
+          max-height: 35px;
+          width: 100%;
+        }
+
+        @media screen and (height <= 553px) {
+          margin-bottom: 20px;
+        }
+    }
+
+    .gtcs-text {
+        width: 93.7rem;
+        height: 55.5rem;
+        overflow-y: scroll;
+        color: $white;
+        font-family: $secondary-font;
+        padding-right: 5rem;
+
+        @media screen and (width <= 1024px) and (orientation: portrait) {
+          width: 100%;
+          height: 100%;
+          font-size: 5rem;
+        }
+
+        @media screen and (width <= 430px) {
+          flex: 1;
+        }
+
+
+        h2 {
+            font-size: 2.4rem;
+            color: $white;
+
+            @media screen and (width <= 1024px) and (orientation: portrait) {
+              font-size: 5rem;
+            }
+
+            @media screen and (width <= 430px) {
+              font-size: 6rem;
+            }
+        }
+
+        ul {
+          margin-bottom: 3rem;
+
+          li {
+            margin: 1rem 3rem;
+            color: $white;
+            font-size: 2.4rem;
+
+            @media screen and (width <= 430px) {
+              font-size: 5rem;
+            }
+          }
+          
+        }
+
+        p {
+            margin-bottom: 3rem;
+            color: $white;
+            font-size: 2.4rem;
+
+            @media screen and (width <= 430px) {
+              font-size: 5rem;
+            }
+        }
+
+        /* width */
+      &::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+          border-radius: 10px;
+          background: $white;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $white; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: $white; 
+        }
+    }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+}

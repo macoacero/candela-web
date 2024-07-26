@@ -1,0 +1,70 @@
+#home {
+    width: 100%;
+    height: 100vh;;
+    min-height: 100vh;
+    z-index: 0;
+
+    .desktop-blueprint, .mobile-blueprint {
+        width: calc(100vw - 10rem);
+        height: calc(100vh - 10rem);
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+        transition: opacity ease-in-out;
+        z-index: 0;
+    }
+
+    .desktop-blueprint {
+        width: calc(100vw - 10rem);
+        height: calc(100vh - 5rem);
+        background: url('../../../../public/bg/maquina-derecha.svg') no-repeat right top,
+                    url('../../../../public/bg/maquina-izquierda.svg') no-repeat left top,
+                    url('../../../../public/bg/herradura-inferior.svg') no-repeat center bottom,
+                    url('../../../../public/bg/mini-robot.svg') no-repeat left calc(100% + 5rem),
+                    url('../../../../public/bg/lineas-maquna.svg') no-repeat center 38vh,
+                    url('../../../../public/bg/grafica.svg') no-repeat center calc(100% + 20rem),
+                    url('../../../../public/bg/numeros.svg') no-repeat 80% 90%,
+                    url('../../../../public/bg/niveles.svg') no-repeat 20% 90%;
+        background-size: 62vh auto, 50vh auto, auto 7vw, 40rem 40rem, 70% auto, auto 13rem, auto 15rem, auto 7rem;
+    }
+
+    .mobile-blueprint {
+        background: url('../../../../public/mobile-blueprint.svg');
+        animation: fade-in-fade-out 6s forwards ease-out;
+        animation-delay: 3s;
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media  screen and (width <= 834px) {
+          background-size: contain;
+          width: calc(100vw - 32px);
+          height: calc(100vh - 32px);
+          top: 15px;
+          left: 15px;
+        }
+
+        @media  screen and (width <= 768px) {
+          background-size: contain;
+        }
+    }
+
+    @keyframes fade-in-fade-out {
+        0% {
+          opacity: 0;
+        }
+
+        33% {
+          opacity: 1;
+        }
+
+        66% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+
+}

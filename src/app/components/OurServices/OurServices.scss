@@ -1,0 +1,82 @@
+@import '_variables.scss';
+
+.our-services {
+    position: absolute;
+    width: 100%;
+    top: 660rem;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+
+    @media screen and (width <= 1368px) and (orientation: portrait) {
+        top: 2600px;
+        padding: 50px;
+    }
+
+    @media screen and (height <= 1366px) and (orientation: portrait) {
+        top: 2570px;
+    }
+
+    @media screen and (height <= 1180px) and (orientation: portrait) {
+        top: 2340px;
+    }
+
+    @media screen and (height <= 1024px) and (orientation: portrait) {
+        position: relative;
+        top: 1040px;
+    }
+
+    @media screen and (height <= 960px) and (orientation: portrait)  {
+        top: 950px;
+        padding: 50px 20px;
+    }
+
+    @media screen and (height <= 896px) and (orientation: portrait)  {
+        top: 910px;
+    }
+
+    @media screen and (height <= 882px) and (orientation: portrait)  {
+        top: 900px;
+    }
+
+    @media screen and (height <= 812px) and (orientation: portrait)  {
+        top: 800px;
+    }
+
+    @media screen and (height <= 740px) and (orientation: portrait)  {
+        top: 750px;
+    }
+
+    @media screen and (height <= 720px) and (orientation: portrait)  {
+        top: 780px;
+    }
+
+    @media screen and (height <= 667px) and (orientation: portrait)  {
+        top: 680px;
+    }
+
+    .title{
+        width: 94.5rem;
+        font-size: 24rem;
+        font-family: $primary-font;
+        color: $white;
+        text-align: center;
+        line-height: 0.9;
+
+        @media (width <= 1024px) and (orientation: portrait) {
+            width: 100%;
+            margin-top: 120px;
+        }
+
+        @media screen and (width <= 843px) and (orientation: portrait) {
+            margin-bottom: 50px;
+            margin-top: 0;
+        }
+    }
+}
+

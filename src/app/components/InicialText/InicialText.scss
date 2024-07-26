@@ -1,0 +1,149 @@
+.inicial-text {
+  overflow: hidden;
+  width: 140rem;
+  height: 29rem;
+  mask-image: url('../../../../public/candela.svg');
+  mask-repeat: no-repeat;
+  mask-size: 140rem 29rem;
+  mask-position: 0;
+  background-image: url('../../../../public/candela-outline.svg');
+  background-repeat: no-repeat;
+  background-size: 140rem 29rem;
+  background-position: 0;
+  position: absolute;
+  left: calc(50% - 138.6rem / 2);
+  top: 50rem;
+  z-index: 50;
+
+  @media screen and (width <= 1024px) and (orientation: portrait) {
+    width: 668px;
+    height: 126px;
+    mask-size: 668px 126px;
+    left: calc(50% - 668px / 2);
+    background-size: contain;
+  }
+
+  @media screen and (width <= 834px) and (orientation: portrait) {
+    width: 668px;
+    height: 126px;
+    mask-size: 668px 126px;
+    left: calc(50% - 668px / 2);
+    background-size: contain;
+  }
+
+  @media screen and (width <= 430px) and (orientation: portrait) {
+    width: 289.28px;
+    height: 59.91px;
+    mask-size: 289.28px 60.52px;
+    background-size: 289.28px 59.91px;
+    background-position: 0;
+    left: calc(50% - 142.6px);
+    top: 103.21px;
+    z-index: 50; 
+  }
+
+  @media screen and (width = 540px) and (height = 720px) {
+    width: 450px;
+    height: 80px;
+    mask-size: 450px 80px;
+    background-size: 450px 80px;
+    background-position: 0;
+    left: calc(50% - 450px / 2);
+    top: 103.21px;
+    z-index: 50; 
+  }
+
+  @media screen 
+  and (device-width: 412px) 
+  and (device-height: 823px) 
+  and (-webkit-device-pixel-ratio: 3.5) 
+  and (orientation: portrait) {
+    width: 289.28px;
+    height: 59.91px;
+    mask-size: 289.28px 60.52px;
+    background-size: 289.28px 59.91px;
+    background-position: 0;
+    left: calc(50% - 142.6px);
+    top: 103.21px;
+    z-index: 50; 
+  }
+
+  .mask {
+    margin-left: -474.8rem;
+    width: 474.8rem;
+    height: 29rem;
+
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      animation: move-mask 6s linear 1 forwards; 
+    }
+
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      margin-left: -2200px;
+      width: 2000px;
+      height: 132px;
+    }
+
+    @media screen and (width <= 834px) and (orientation: portrait) {
+      margin-left: -2200px;
+      width: 2000px;
+      height: 132px;
+    }
+
+    @media screen and (width = 540px) and (height = 720px) {
+      height: 100px;
+    }
+
+    @media screen and (width <= 430px) {
+      height: 100px;
+    }
+
+    @media screen and (width <= 414px) {
+      height: 100px;
+    }
+
+    @media screen and (width <= 390px) {
+      margin-left: -982px;
+      width: 977.77px;
+      height: 59.91px;
+    }
+
+    @media screen 
+    and (device-width: 412px) 
+    and (device-height: 823px) 
+    and (-webkit-device-pixel-ratio: 3.5) 
+    and (orientation: portrait) {
+      height: 100px;
+    }
+  }
+
+  &.fixed {
+    position: fixed;
+    left: calc(50% - 138.6rem / 2);
+    z-index: 2;
+
+    img {
+      animation: none;
+    }
+  }
+
+  @keyframes move-mask {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+}
+
+@media (width <= 1024px) {
+  .inicial-text {
+    z-index: 2;
+    top: 60vh;
+
+    img {
+      animation: move-mask 6s linear 1 forwards; 
+    }
+  }
+}
