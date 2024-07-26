@@ -53,7 +53,7 @@
     z-index: 50; 
   }
 
-  @media (aspect-ratio: 20/9) {
+  @media  only screen and (min-device-pixel-ratio: 2.625) and (orientation: portrait){
     width: 289.28px;
     height: 59.91px;
     mask-size: 289.28px 60.52px;
@@ -103,7 +103,7 @@
       height: 59.91px;
     }
 
-    @media (aspect-ratio: 20/9) {
+    @media  only screen and (min-device-pixel-ratio: 2.625) and (orientation: portrait){
       height: 100px;
     }
   }
