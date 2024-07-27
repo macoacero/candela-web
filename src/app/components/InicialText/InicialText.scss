@@ -53,10 +53,7 @@
     z-index: 50; 
   }
 
-  @media only screen 
-  and (max-width: 812px) 
-  and (min-aspect-ratio: 2/1) 
-  and (min-device-pixel-ratio: 2) {
+  @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.6){
     width: 380px;
     height: 70px;
     mask-size: 380px 70px;
@@ -106,10 +103,7 @@
       height: 59.91px;
     }
 
-    @media only screen 
-    and (max-width: 812px) 
-    and (min-aspect-ratio: 2/1) 
-    and (min-device-pixel-ratio: 2) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.6) { 
       height: 106px;
     }
   }
