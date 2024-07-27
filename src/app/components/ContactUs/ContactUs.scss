@@ -41,6 +41,13 @@
     max-height: 2000px;
     padding: 80px 10px 10.2px;
   }
+
+  
+  @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+    min-height: calc(100vh - 100px);
+    max-height: 2000px;
+    padding: 80px 10px 10.2px;
+  }
   
   .container-left {
     display: flex;
@@ -60,6 +67,10 @@
     }
 
     @media screen and (width <= 390px) {
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       padding: 0;
     }
 
@@ -96,6 +107,10 @@
       @media screen and (width <= 853px) and (height <= 1280px) {
         font-size: 20rem;
       }
+
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        font-size: 26rem;
+      }
     }
 
     .footer {
@@ -113,7 +128,6 @@
 
         &:hover {
           cursor: none;
-      }
       }
     }
   }
@@ -154,6 +168,11 @@
         height: auto;
       }
 
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        width: calc(100vw - 20.6px);
+        height: auto;
+      }
+
       .show-contact-form {
         &:hover {
           color: $hover-color;
@@ -187,6 +206,10 @@
           width: 180px;
         }
 
+        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+          padding: 22px 0;
+        }
+
         img {
             width: 29.32rem;
             height: auto;
@@ -209,6 +232,10 @@
 
             @media screen and (width <= 853px) and (height <= 1280px) {
               width: 100%;
+            }
+
+            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+              width: 120px
             }
         }
       }
@@ -268,6 +295,12 @@
 
           @media screen and (width <= 390px) {
             padding: 5px 0;
+          }
+
+          @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            font-size: 14rem;
+            padding: 8px 0;
+            height: 80px;
           }
 
           .text {
@@ -345,6 +378,10 @@
           }
 
           @media screen and (width <= 390px) {
+            padding: 6.2px 9.5px;
+          }
+
+          @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
             padding: 6.2px 9.5px;
           }
         }
