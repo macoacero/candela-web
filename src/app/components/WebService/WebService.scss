@@ -169,10 +169,7 @@
           top: 42px;
         }
 
-        @media only screen and (-webkit-min-device-pixel-ratio: 2), 
-        only screen and (-min--moz-device-pixel-ratio: 2), 
-        only screen and (-o-min-device-pixel-ratio: 20/9), 
-        only screen and (min-device-pixel-ratio: 2) {
+        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
           width: 60px;
           height: 60px;
           top: 42px;

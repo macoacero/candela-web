@@ -30,6 +30,13 @@
       left: 20px;
     }
 
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      width: 25px;
+      height: 16px;
+      top: 25px;
+      left: 20px;
+    }
+
     &.active{
         top: 12rem;
 
