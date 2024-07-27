@@ -12,6 +12,10 @@
     @media screen and (width <= 430px) {
       top: 30px;
     }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      top: 30px;
+    }
   }
   
   .bg {
@@ -32,6 +36,11 @@
     animation: fade-in 1s forwards ease-out; 
 
     @media screen and (width <= 430px) {
+      top: 20px;
+      right: 20px;
+    }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       top: 20px;
       right: 20px;
     }
@@ -57,6 +66,13 @@
       left: 10px;
       bottom: 100px;
     }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      width: calc(100% - 20px);
+      left: 10px;
+      bottom: 100px;
+    }
+
   }
 
   .version-legal {
@@ -74,6 +90,19 @@
     text-decoration: underline;
     display: flex;
     justify-content: center;
+    }
+    
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      width: 100%;
+      position: absolute;
+      z-index: 500;
+      bottom: 50px;
+      left:0;
+      font-size: 7rem;
+      font-family: $secondary-font;
+      text-decoration: underline;
+      display: flex;
+      justify-content: center;
     }
   }
 
