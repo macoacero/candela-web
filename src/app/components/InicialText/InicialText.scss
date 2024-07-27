@@ -56,7 +56,19 @@
   @media only screen 
   and (max-width: 412px) 
   and (aspect-ratio: 20/9) 
-  and (-moz-min-device-pixel-ratio: 2) {
+  and (-webkit-min-device-pixel-ratio: 2), 
+  only screen 
+  and (max-width: 412px) 
+  and (aspect-ratio: 20/9) 
+  and (-moz-min-device-pixel-ratio: 2), 
+  only screen 
+  and (max-width: 412px) 
+  and (aspect-ratio: 20/9) 
+  and (-o-min-device-pixel-ratio: 2), 
+  only screen 
+  and (max-width: 412px) 
+  and (aspect-ratio: 20/9) 
+  and (min-device-pixel-ratio: 2) {
     width: 380px;
     height: 70px;
     mask-size: 380px 70px;
@@ -106,10 +118,22 @@
       height: 59.91px;
     }
 
-  @media only screen 
-  and (max-width: 412px) 
-  and (aspect-ratio: 20/9) 
-  and (-moz-min-device-pixel-ratio: 2) {
+    @media only screen 
+    and (max-width: 412px) 
+    and (aspect-ratio: 20/9) 
+    and (-webkit-min-device-pixel-ratio: 2), 
+    only screen 
+    and (max-width: 412px) 
+    and (aspect-ratio: 20/9) 
+    and (-moz-min-device-pixel-ratio: 2), 
+    only screen 
+    and (max-width: 412px) 
+    and (aspect-ratio: 20/9) 
+    and (-o-min-device-pixel-ratio: 2), 
+    only screen 
+    and (max-width: 412px) 
+    and (aspect-ratio: 20/9) 
+    and (min-device-pixel-ratio: 2) {
       height: 106px;
     }
   }
