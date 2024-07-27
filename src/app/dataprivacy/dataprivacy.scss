@@ -12,6 +12,10 @@
     @media screen and (width <= 430px) {
       top: 30px;
     }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      top: 30px;
+    }
   }
   
   .bg {
@@ -34,6 +38,10 @@
     @media screen and (width <= 430px) {
       top: 20px;
       right: 20px;
+    }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      top: 20px;
     }
 
     &:hover {
@@ -60,6 +68,12 @@
     @media screen and (height <= 568px) {
       bottom: 50px;
     }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      width: calc(100% - 20px);
+      left: 10px;
+      bottom: 100px;
+    }
   }
 
   .version-legal {
@@ -82,6 +96,20 @@
 
     @media screen and (height <= 568px) {
       bottom: 20px;
+    }
+
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      width: 100%;
+      position: absolute;
+      z-index: 500;
+      bottom: 50px;
+      left:0;
+      font-size: 7rem;
+      color: $white;
+      font-family: $secondary-font;
+      text-decoration: underline;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -127,6 +155,16 @@
       height: 35vh;
     }
 
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      width: calc(100% - 80px);
+      margin-left: 40px;
+      height: 60vh;
+      position: absolute;
+      top: auto;
+      bottom: 240px;
+      left: 0;
+    }
+
     h1 {
         width: 93.7rem;
         font-family: $secondary-font;
@@ -140,6 +178,12 @@
           max-height: 35px;
           width: 100%;
         }
+
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        flex: 1;
+        max-height: 35px;
+        width: 100%;
+      }
     }
 
     .datenschutz-text {
@@ -161,6 +205,10 @@
           flex: 1;
         }
 
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      flex: 1;
+    }
+
         h2 {
             font-size: 2.4rem;
             color: $white;
@@ -172,6 +220,10 @@
             @media screen and (width <= 430px) {
               font-size: 6rem;
             }
+
+            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+              font-size: 6rem;
+            }
         }
 
         p {
@@ -181,29 +233,33 @@
             @media screen and (width <= 430px) {
               font-size: 5rem;
             }
+
+          @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            font-size: 5rem;
+          }
         }
 
         /* width */
-&::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  &::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: $white;
-  }
-   
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background: $white; 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: $white; 
-  }
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+          border-radius: 10px;
+          background: $white;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $white; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: $white; 
+        }
     }
 }
 
