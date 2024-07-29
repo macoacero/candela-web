@@ -101,7 +101,7 @@ export default function MainPage({}) {
         }
 
         if (isTablet) {
-            return { top: '50px' };
+            return { top: '30px' };
         }
 
         if (contactusFooterRef.isVisible && constactUsRef.topCoordinate !== null) {

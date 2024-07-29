@@ -70,6 +70,10 @@
         opacity: 0;
       }
 
+      @media screen and (width <= 1024px) and (orientation: portrait) {
+        width: 300px;
+      }
+
       @media screen and (width <= 843px) and (orientation: portrait) {
         width: 300px;
         height: auto;
@@ -141,6 +145,7 @@
 
         @media screen and (width <= 843px) and (orientation: portrait) {
           margin-left: 0;
+          font-size: 6rem;
         }
 
         @media screen and (width <= 430px) {
@@ -187,6 +192,7 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         width: 100%;
+        font-size: 8rem;
       }
 
       @media screen and (width <= 430px) {
@@ -206,6 +212,7 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         width: 100%;
+        font-size: 4rem;
       }
 
       @media screen and (width <= 430px) {

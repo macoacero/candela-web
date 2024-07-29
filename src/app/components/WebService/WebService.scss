@@ -72,6 +72,7 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         right: 50px;
+        width: 350px;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
@@ -121,6 +122,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @media screen and (width <= 1024px) and (orientation: portrait) {
+        font-size: 6rem;
+      }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
         right: 170px;
@@ -210,6 +215,7 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         width: 100%;
+        font-size: 8rem;
       }
 
       @media screen and (width <= 430px) {
@@ -229,6 +235,7 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         width: 100%;
+        font-size: 4rem;
       }
 
       @media screen and (width <= 430px) {
