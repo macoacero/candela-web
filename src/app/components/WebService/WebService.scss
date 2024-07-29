@@ -127,6 +127,8 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         font-size: 6rem;
+        top: 300px;
+        right: 170px;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
