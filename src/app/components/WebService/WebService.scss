@@ -74,7 +74,7 @@
         right: 0;
         width: 550px;
         height: auto;
-        top: 100px;
+        top: 200px;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
@@ -127,15 +127,15 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         font-size: 6rem;
-        top: 300px;
-        right: 170px;
+        top: 650px;
+        right: 100px;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
         right: 170px;
         width: 140px;
         height: 140px;
-        top: 430px;
+        top: 730px;
       }
 
       @media screen and (width <= 430px) {
