@@ -71,9 +71,10 @@
       mask-image: linear-gradient(#0050FF 80%, transparent);
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
-        right: 50px;
+        right: 0;
         width: 550px;
         height: auto;
+        top: 100px;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
