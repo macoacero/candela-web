@@ -63,6 +63,7 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         width: 350px;
+        height: auto;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
