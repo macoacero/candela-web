@@ -66,6 +66,11 @@
       flex-direction: column;
       justify-content: center;
       text-align: center;
+      left: 0;
+
+      &::after {
+        display: none;
+      }
 
       span {
         display: none;
