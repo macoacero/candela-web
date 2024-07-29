@@ -114,12 +114,16 @@
       font-family: $primary-font;
       font-size: 3.6rem;
 
+      @media screen and (width <= 1024px) and (orientation: portrait) {
+        font-size: 6rem;
+      }
+
       @media screen and (width <= 843px) and (orientation: portrait) {
         width: 140px;
         height: 140px;
         top: 520px;
         left: 200px;
-        font-size: 8rem;
+        font-size: 6rem;
       }
 
       @media screen and (width <= 430px) {

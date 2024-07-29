@@ -35,6 +35,11 @@
     cursor: pointer;
     animation: fade-in 1s forwards ease-out; 
 
+    @media screen and (width <= 1024px) and (orientation: portrait) {
+      top: 40px;
+      right: 40px;
+    }
+
     @media screen and (width <= 430px) {
       top: 20px;
       right: 20px;
