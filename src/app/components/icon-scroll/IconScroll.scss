@@ -22,6 +22,10 @@
         margin-left: 10px;
         font-family: $primary-font;
 
+        @media screen and (width <= 1024px) and (orientation: portrait) {
+            font-size: 3rem;
+        }
+
         @media screen and (width <= 430px) {
             font-size: 5rem;
         }
