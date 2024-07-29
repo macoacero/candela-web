@@ -64,6 +64,10 @@
 
     @media screen and (width <= 1024px) and (orientation: portrait) {
       bottom: 40px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
 
       span {
         display: none;

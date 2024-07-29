@@ -67,6 +67,11 @@
       width: 100%;
       flex-direction: column;
       justify-content: center;
+      text-align: center;
+
+      span {
+        display: none;
+      }
     }
 
     @media screen and (width <= 430px) {
