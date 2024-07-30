@@ -29,6 +29,15 @@
       min-height: 900px;
     }
     
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 1.5) 
+    and (-webkit-max-device-pixel-ratio: 2.2){
+      width: 100%;
+      margin-top: 0;
+    }
 
   .image-container {
     position: relative;
@@ -59,6 +68,14 @@
       min-height: 700px;
       margin-bottom: -30px;
     }
+
+    @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) 
+        and (-webkit-max-device-pixel-ratio: 2.2){
+        }
 
     .image-web {
       position: absolute;
@@ -103,6 +120,14 @@
         height: auto;
         right: 0;
       }
+
+      @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) 
+        and (-webkit-max-device-pixel-ratio: 2.2){
+        }
   
       &.visible {
           opacity: 1;
@@ -163,6 +188,14 @@
         font-size: 8rem;
       }
 
+      @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) 
+        and (-webkit-max-device-pixel-ratio: 2.2){
+        }
+
       .plus-icon{
         width: 10rem;
         height: 10rem;
@@ -182,6 +215,14 @@
           width: 60px;
           height: 60px;
           top: 42px;
+        }
+
+        @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) 
+        and (-webkit-max-device-pixel-ratio: 2.2){
         }
       }
     }
@@ -208,9 +249,17 @@
     }
 
     @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
-          width: 100%;
-          text-align: center;
-        }
+        width: 100%;
+        text-align: center;
+      }
+
+      @media only screen 
+      and (min-width: 1024px) 
+      and (max-height: 1366px) 
+      and (orientation: portrait) 
+      and (-webkit-min-device-pixel-ratio: 1.5) 
+      and (-webkit-max-device-pixel-ratio: 2.2){
+      }
 
     h2 {
       font-size: 6rem;
@@ -228,6 +277,14 @@
 
       @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
           font-size: 30px;
+        }
+
+        @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) 
+        and (-webkit-max-device-pixel-ratio: 2.2){
         }
     }
 
@@ -251,6 +308,16 @@
         font-size: 15px;
         margin-top: 30px;
       }
+
+      @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) 
+        and (-webkit-max-device-pixel-ratio: 2.2){
+          width: 100%;
+          font-size: 4rem
+        }
     }
   }
 }
