@@ -20,7 +20,11 @@
       min-height: 920px;
     }
 
-    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+    @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
       flex-direction: column;
       justify-content: center;
       padding: 0;
@@ -57,7 +61,11 @@
       height: 610px;
     }
 
-    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+    @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
       background-position: center 0;
       width: 100%;
       height: 610px;
@@ -112,7 +120,11 @@
         width: 280px;
       }
 
-      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
         top: 150px;
         left: 0;
         width: 300px;
@@ -169,7 +181,11 @@
         top: 400px;
       }
 
-      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
         top: 440px;
         left: 168px;
         width: 130px;
@@ -199,7 +215,11 @@
           width: 80px;
         }
 
-        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
           width: 80px;
         }
 
@@ -237,7 +257,11 @@
       text-align: center;
     }
 
-    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+    @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
       width: 100%;
       text-align: center;
         }
@@ -265,7 +289,11 @@
         font-size: 30px;
       }
 
-      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
           font-size: 30px;
         }
 
@@ -296,7 +324,11 @@
         margin-top: 30px;
       }
 
-      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+      @media only screen 
+    and (width <= 824px) 
+    and (height >= 915px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
           font-size: 15px;
           margin-top: 30px;
         }
