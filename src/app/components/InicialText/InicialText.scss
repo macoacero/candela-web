@@ -127,6 +127,7 @@
       mask-size: 668px 126px;
       left: calc(50% - 668px / 2);
       background-size: contain;
+      animation: move-mask 6s linear 1 forwards; 
     }
   }
 
@@ -148,7 +149,6 @@
       left: calc(50% - 668px / 2);
       z-index: 2;
       top: 60vh;
-      animation: move-mask 6s linear 1 forwards; 
     }
 
   }
