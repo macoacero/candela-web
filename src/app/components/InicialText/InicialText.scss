@@ -137,7 +137,11 @@
       height: 59.91px;
     }
 
-    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+    @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
       height: 106px;
     }
 

@@ -11,7 +11,11 @@
         flex: 1;
     }
 
-    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+    @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
         width: 100%;
         justify-content: space-between;
         flex: 1;
@@ -37,7 +41,11 @@
             padding: 50px 40px 66px;
         }
 
-        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
             font-size: 9.6rem;
             padding: 50px 40px 66px;
         }
@@ -67,7 +75,11 @@
             border-color: $white;;
         }
 
-        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
             border: 0;
             border-top: solid 1px $white;
             padding-top: 46px;
@@ -95,7 +107,11 @@
                 font-size: 5rem;
             }
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                 font-size: 5rem;
             }
 
@@ -122,7 +138,11 @@
                 border-color: $white;
             }
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+            and (max-width: 450px) 
+            and (min-height: 840px)
+            and (-webkit-min-device-pixel-ratio: 2.2)
+            and (orientation: portrait) {
                 border-color: $white;
             }
 
@@ -157,7 +177,11 @@
                 height: 150px;
             }
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                 height: 150px;
             }
 
@@ -180,7 +204,11 @@
                 font-size: 5rem;
             }
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                 font-size: 5rem;
             }
 
@@ -202,7 +230,11 @@
                 align-items: center;
             }
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                 width: 100%;
                 flex-direction: column;
                 align-items: center;
@@ -230,7 +262,11 @@
                     margin-bottom: 36px;
                 }
 
-                @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+                @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                     width: 100%;
                     margin-right: 0;
                     margin-bottom: 36px;
@@ -252,7 +288,11 @@
                 width: 270px;
                 border-color: $white;
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                 margin-top: 60px;
                 width: 270px;
                 border-color: $white;
@@ -294,7 +334,11 @@
                 right: 15px;
                 }
 
-                @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+                @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                     top: 15px;
                     right: 15px;
                 }
@@ -322,7 +366,11 @@
                 padding: 0 20px;
             }
 
-            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+            @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                 padding: 0 20px;
             }
 
@@ -345,7 +393,11 @@
                     margin-bottom: 50px;
                 }
 
-                @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+                @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                     width: 110px;
                     height: 110px;
                     margin-bottom: 50px;
@@ -372,7 +424,11 @@
                     margin-bottom: 25px;
                 }
 
-                @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+                @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                     font-size: 15rem;
                     margin-bottom: 25px;
                 }
@@ -395,7 +451,11 @@
                     font-size: 8rem;
                 }
 
-                @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+                @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
                     font-size: 8rem;
                 }
 
@@ -426,7 +486,11 @@
             display: block;
         }
 
-        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
             display: block;
         }
 

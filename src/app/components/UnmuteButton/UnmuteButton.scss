@@ -52,7 +52,11 @@
             right: 20px;
         }
 
-        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
             top: 20px;
             right: 20px;
         }
@@ -112,7 +116,11 @@
             margin-left: 0; 
         }
 
-        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
+        @media only screen 
+    and (max-width: 450px) 
+    and (min-height: 840px)
+    and (-webkit-min-device-pixel-ratio: 2.2)
+    and (orientation: portrait) {
             width: 40px;
             height: 40px;
             margin-left: 0; 
