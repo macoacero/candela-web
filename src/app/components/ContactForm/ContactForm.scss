@@ -7,7 +7,7 @@
 
 
     @media (width <= 1024px) and (orientation: portrait) {
-        width: calc(100% - 20.4px);
+        width: calc(100% - 57px);
         flex: 1;
     }
 
@@ -57,6 +57,11 @@
         border: solid 1px $lines-color;
         padding: 7rem 6rem 5rem;
 
+        @media (width <= 1024px) and (orientation: portrait) {
+            border-left: 0;
+            border-right: 0;
+        }
+
         @media (width <= 430px) {
             border: 0;
             border-top: solid 1px $white;
@@ -87,6 +92,10 @@
         font-size: 2rem;
         text-align: left;
 
+            @media (width <= 1024px) and (orientation: portrait) {
+                font-size: 4rem;;
+            }
+
             @media (width <= 430px) {
                 font-size: 5rem;
             }
@@ -105,10 +114,14 @@
         width: 100%;
         margin-top: 5px;
         padding: 10px;
-        font-size: 16px;
+        font-size: 1.6rem;
         background-color: transparent;
         border: solid 1px $lines-color;
         color: $white;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+                font-size: 2rem;;
+            }
 
             @media (width <= 430px) {
                 border-color: $white;
@@ -159,6 +172,10 @@
             margin-top: 5px;
             font-family: $secondary-font;
             font-size: 1.2rem;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+                font-size: 3rem;;
+            }
 
             @media (width <= 430px) {
                 font-size: 5rem;
@@ -331,6 +348,10 @@
                 margin-bottom: 3rem;
                 line-height: 1.2;
 
+                @media (width <= 1024px) and (orientation: portrait) {
+                    font-size: 12rem;;
+                }
+
                 @media (width <= 430px) {
                     font-size: 15rem;
                     margin-bottom: 25px;
@@ -350,6 +371,10 @@
                 font-family: $secondary-font;
                 color: $white;
                 font-size: 2.2rem;
+
+                @media (width <= 1024px) and (orientation: portrait) {
+                    font-size: 4.4rem;;
+                }
 
                 @media (width <= 430px) {
                     font-size: 8rem;
