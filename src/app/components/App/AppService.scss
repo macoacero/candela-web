@@ -119,10 +119,10 @@
       }
 
       @media only screen 
-    and (max-width: 450px) 
-    and (min-height: 840px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      and (max-width: 450px) 
+      and (min-height: 840px)
+      and (-webkit-min-device-pixel-ratio: 2.2)
+      and (orientation: portrait) {
         top: 150px;
         left: 0;
         width: 300px;
@@ -134,7 +134,7 @@
       and (orientation: portrait) 
       and (-webkit-min-device-pixel-ratio: 1.5) 
       and (-webkit-max-device-pixel-ratio: 2.2){
-        width: 550px;
+        width: 450px;
         height: auto;
         top: 270px;
       }
@@ -157,6 +157,10 @@
 
       @media screen and (width <= 1024px) and (orientation: portrait) {
         font-size: 6rem;
+        top: 740px;
+        left: 168px;
+        width: 200px;
+        height: 200px;
       }
 
       @media screen and (width <= 843px) and (orientation: portrait) {
@@ -180,11 +184,11 @@
       }
 
       @media only screen 
-    and (max-width: 450px) 
-    and (min-height: 840px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
-        top: 440px;
+      and (max-width: 450px) 
+      and (min-height: 840px)
+      and (-webkit-min-device-pixel-ratio: 2.2)
+      and (orientation: portrait) {
+        top: 340px;
         left: 168px;
         width: 130px;
         height: 130px;
@@ -198,6 +202,10 @@
       and (-webkit-min-device-pixel-ratio: 1.5) 
       and (-webkit-max-device-pixel-ratio: 2.2){
         font-size: 6rem;
+        top: 740px;
+        left: 168px;
+        width: 200px;
+        height: 200px;
       }
       
       .text{
