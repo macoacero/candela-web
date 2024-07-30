@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const MOBILE_MAX_WIDTH = 430;
-const TABLET_MAX_WIDTH = 1024;
+const TABLET_MAX_WIDTH = 2064;
 
 const useDeviceType = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -12,29 +12,24 @@ const useDeviceType = () => {
         const handleResize = () => {
             const windowWidth = window.innerWidth;
             const windowHeight = window.innerHeight;
+            const isVertical = windowHeight > windowWidth;
 
-            if (windowWidth <= MOBILE_MAX_WIDTH) {
+            if (windowWidth <= MOBILE_MAX_WIDTH && isVertical) {
                 setIsMobile(true);
                 setIsTablet(false);
                 setIsDesktop(false);
-            } else if (windowWidth <= TABLET_MAX_WIDTH) {
+            } else if (windowWidth <= TABLET_MAX_WIDTH && isVertical) {
                 setIsMobile(false);
                 setIsTablet(true);
                 setIsDesktop(false);
-
-                if( windowWidth === 1024 && windowHeight === 600) { 
-                    setIsMobile(false);
-                    setIsTablet(false);
-                    setIsDesktop(true);
-                } 
-            } else {
+            } else if (windowWidth > TABLET_MAX_WIDTH || !isVertical) {
                 setIsMobile(false);
                 setIsTablet(false);
                 setIsDesktop(true);
             }
         };
 
-        handleResize(); // Initial call
+        handleResize(); 
 
         window.addEventListener('resize', handleResize);
 
