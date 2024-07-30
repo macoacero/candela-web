@@ -75,6 +75,8 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          width: 450px;
+          height: 600px;
         }
 
     .image-web {
@@ -127,6 +129,10 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          right: 0;
+          width: 550px;
+          height: auto;
+          top: 350px;
         }
   
       &.visible {
@@ -193,7 +199,10 @@
         and (max-height: 1366px) 
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
-        and (-webkit-max-device-pixel-ratio: 2.2){
+        and (-webkit-max-device-pixel-ratio: 2.2) {
+          font-size: 6rem;
+          top: 800px;
+          right: 100px;
         }
 
       .plus-icon{
@@ -223,6 +232,8 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          width: 60px;
+          height: 60px;
         }
       }
     }
@@ -258,7 +269,8 @@
       and (max-height: 1366px) 
       and (orientation: portrait) 
       and (-webkit-min-device-pixel-ratio: 1.5) 
-      and (-webkit-max-device-pixel-ratio: 2.2){
+      and (-webkit-max-device-pixel-ratio: 2.2) {
+        width: 50%;
       }
 
     h2 {
@@ -284,7 +296,9 @@
         and (max-height: 1366px) 
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
-        and (-webkit-max-device-pixel-ratio: 2.2){
+        and (-webkit-max-device-pixel-ratio: 2.2) {
+          width: 100%;
+          font-size: 8rem;
         }
     }
 

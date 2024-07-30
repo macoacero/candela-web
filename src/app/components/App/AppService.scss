@@ -68,6 +68,7 @@
     and (orientation: portrait) 
     and (-webkit-min-device-pixel-ratio: 1.5) 
     and (-webkit-max-device-pixel-ratio: 2.2){
+      height: 670px;
     }
 
     .image-app {
@@ -122,6 +123,9 @@
       and (orientation: portrait) 
       and (-webkit-min-device-pixel-ratio: 1.5) 
       and (-webkit-max-device-pixel-ratio: 2.2){
+        width: 550px;
+        height: auto;
+        top: 270px;
       }
     }
 
@@ -178,6 +182,7 @@
       and (orientation: portrait) 
       and (-webkit-min-device-pixel-ratio: 1.5) 
       and (-webkit-max-device-pixel-ratio: 2.2){
+        font-size: 6rem;
       }
       
       .text{
@@ -203,6 +208,8 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          margin-left: 0;
+          font-size: 6rem;
         }
         
       }
@@ -240,6 +247,7 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          width: 50%;
         }
 
     h2 {
@@ -266,6 +274,8 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          width: 100%;
+          font-size: 8rem;
         }
     }
 
@@ -296,6 +306,8 @@
         and (orientation: portrait) 
         and (-webkit-min-device-pixel-ratio: 1.5) 
         and (-webkit-max-device-pixel-ratio: 2.2){
+          width: 100%;
+          font-size: 4rem;
         }
     }
   }
