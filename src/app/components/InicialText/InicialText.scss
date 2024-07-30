@@ -146,6 +146,9 @@
     and (-webkit-min-device-pixel-ratio: 1.5) 
     and (-webkit-max-device-pixel-ratio: 2.2) {
       left: calc(50% - 668px / 2);
+      z-index: 2;
+      top: 60vh;
+      animation: move-mask 6s linear 1 forwards; 
     }
 
   }
