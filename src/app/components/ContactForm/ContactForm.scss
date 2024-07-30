@@ -34,6 +34,10 @@
         margin-bottom: 3rem;
         text-align: center;
 
+        @media (width <= 1024px) and (orientation: portrait) {
+            font-size: 6rem;;
+        }
+
         @media (width <= 430px) {
             font-size: 9.6rem;
             padding: 50px 40px 66px;
@@ -120,7 +124,7 @@
         color: $white;
 
             @media (width <= 1024px) and (orientation: portrait) {
-                font-size: 2rem;;
+                font-size: 3rem;;
             }
 
             @media (width <= 430px) {
@@ -191,7 +195,8 @@
         }
 
         .form-group-container {
-        display: flex;
+            display: flex;
+            width: 100%;
 
             @media (width <= 430px) {
                 width: 100%;
@@ -236,13 +241,17 @@
         }
 
         .submit-button {
-        width: 27rem;
-        margin-top: 2rem;
-        padding: 10px;
-        background-color: transparent;
-        border: solid 1px $lines-color;
-        cursor: pointer;
-        color: $white;
+            width: 27rem;
+            margin-top: 2rem;
+            padding: 10px;
+            background-color: transparent;
+            border: solid 1px $lines-color;
+            cursor: pointer;
+            color: $white;
+
+            @media (width <= 1024px) and (orientation: portrait) {
+                font-size: 4rem;;
+            }
         
             @media (width <= 430px) {
                 margin-top: 60px;
