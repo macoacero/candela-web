@@ -50,15 +50,15 @@
     and (min-height: 840px)
     and (-webkit-min-device-pixel-ratio: 2.2)
     and (orientation: portrait) {
-    width: 380px;
-    height: 70px;
-    mask-size: 380px 70px;
-    background-size: 380px 70px;
-    background-position: 0;
-    left: calc(50% - 190px);
-    top: 550px;
-    z-index: 50; 
-  }
+      width: 380px;
+      height: 70px;
+      mask-size: 380px 70px;
+      background-size: 380px 70px;
+      background-position: 0;
+      left: calc(50% - 190px);
+      top: 550px;
+      z-index: 50; 
+    }
 
   @media only screen 
   and (min-width: 1024px) 
@@ -155,7 +155,6 @@
       width: 2000px;
       height: 132px;
       animation: move-mask 6s linear 1 forwards; 
-
     }
   }
 
