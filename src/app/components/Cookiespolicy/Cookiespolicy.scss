@@ -37,7 +37,7 @@
         h2 {
             color: $secondary-color;  
             margin-bottom: 3.2rem;
-            font-size: $primary-font;
+            font-size: 3rem;
             text-align: center;
 
             @media (width <= 1024px) and (orientation: portrait) {
@@ -60,7 +60,7 @@
             color: #000;
             line-height: 1.2;
             text-align: center;
-            font-size: $secondary-font;
+            font-size: 1.8rem;
 
             @media (width <= 1024px) and (orientation: portrait) {
                 font-size: 4rem;
