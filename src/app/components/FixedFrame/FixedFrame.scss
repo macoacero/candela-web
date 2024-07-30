@@ -26,6 +26,14 @@
         @media screen and (width <= 430px) {
             top: 10.2px;
         }
+
+        @media only screen 
+        and (max-width: 450px) 
+        and (min-height: 840px)
+        and (-webkit-min-device-pixel-ratio: 2.2)
+        and (orientation: portrait) {
+            top: 30px;
+        }
     }
 
     .line-top-2 {
@@ -42,6 +50,14 @@
 
         @media screen and (width <= 430px) {
             top: 10.2px;
+        }
+
+        @media only screen 
+        and (max-width: 450px) 
+        and (min-height: 840px)
+        and (-webkit-min-device-pixel-ratio: 2.2)
+        and (orientation: portrait) {
+            top: 30px;
         }
     }
 
@@ -60,6 +76,14 @@
         @media screen and (width <= 430px) {
             bottom: 10.2px;
         }
+
+        @media only screen 
+        and (max-width: 450px) 
+        and (min-height: 840px)
+        and (-webkit-min-device-pixel-ratio: 2.2)
+        and (orientation: portrait) {
+            bottom: 30px;
+        }
     }
 
     .line-left {
@@ -77,6 +101,14 @@
         @media screen and (width <= 430px) {
             left: 10.2px;
         }
+
+        @media only screen 
+        and (max-width: 450px) 
+        and (min-height: 840px)
+        and (-webkit-min-device-pixel-ratio: 2.2)
+        and (orientation: portrait) {
+            left: 30px;
+        }
     }
 
     .line-right {
@@ -93,6 +125,14 @@
 
         @media screen and (width <= 430px) {
             right: 10.2px;
+        }
+
+        @media only screen 
+        and (max-width: 450px) 
+        and (min-height: 840px)
+        and (-webkit-min-device-pixel-ratio: 2.2)
+        and (orientation: portrait) {
+            right: 30px;
         }
     }
 
@@ -124,10 +164,10 @@
         }
 
         @media only screen 
-    and (max-width: 450px) 
-    and (min-height: 840px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+        and (max-width: 450px) 
+        and (min-height: 840px)
+        and (-webkit-min-device-pixel-ratio: 2.2)
+        and (orientation: portrait) {
             width: 140px;
             height: auto;
             top: 24px;

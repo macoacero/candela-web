@@ -112,10 +112,6 @@
         font-size: 20rem;
       }
 
-      @media screen and (width <= 853px) and (height <= 1280px) {
-        font-size: 20rem;
-      }
-
       @media only screen 
     and (max-width: 450px) 
     and (min-height: 840px)
@@ -219,10 +215,6 @@
           display: none;
         }
 
-        @media screen and (width <= 853px) and (height <= 1280px) {
-          width: 180px;
-        }
-
         @media only screen 
     and (max-width: 450px) 
     and (min-height: 840px)
@@ -249,10 +241,6 @@
 
             @media screen and (width <= 390px) {
               width: 120px
-            }
-
-            @media screen and (width <= 853px) and (height <= 1280px) {
-              width: 100%;
             }
 
             @media only screen 
