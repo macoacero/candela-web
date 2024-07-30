@@ -46,7 +46,14 @@ const InicialText: React.FC<InicialTextProps> = ({ inicialTextIsVisible }) => {
       key={animationKey}
       className={`inicial-text ${isFixed ? 'fixed' : ''}`}
     >
-
+      <Image        
+        src="/mask.svg" 
+        alt="" 
+        width={1400} 
+        height={290} 
+        style={{ transform: isMobile ? 'translateX(0)' : `translateX(${position}rem)` }}
+        className="mask"
+      />
     </div>
   );
 };
