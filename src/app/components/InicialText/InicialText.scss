@@ -15,6 +15,15 @@
   top: 50rem;
   z-index: 50;
 
+  
+  @media screen and (width > 1024) and (orientation: portrait) {
+    width: 668px;
+    height: 126px;
+    mask-size: 668px 126px;
+    left: calc(50% - 668px / 2);
+    background-size: contain;
+  }
+
   @media screen and (width <= 1024px) and (orientation: portrait) {
     width: 668px;
     height: 126px;
@@ -69,7 +78,10 @@
     width: 474.8rem;
     height: 29rem;
 
-    @media screen and (width <= 1024px) and (orientation: portrait) {
+    @media screen and (width > 1024) and (orientation: portrait) {
+      margin-left: -2200px;
+      width: 2000px;
+      height: 132px;
       animation: move-mask 6s linear 1 forwards; 
     }
 
@@ -77,6 +89,7 @@
       margin-left: -2200px;
       width: 2000px;
       height: 132px;
+      animation: move-mask 6s linear 1 forwards; 
     }
 
     @media screen and (width <= 834px) and (orientation: portrait) {

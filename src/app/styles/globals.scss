@@ -200,7 +200,13 @@ a {
 
     a {
       margin: 0 1rem;
-      position: relative;
+      
+      @media screen and (orientation: portrait) {
+
+        &::after {
+          display: none;
+        }
+      }
 
       &::after {
         content: '';
