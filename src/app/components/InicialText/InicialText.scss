@@ -67,6 +67,7 @@
     mask-size: 668px 126px;
     left: calc(50% - 668px / 2);
     background-size: contain;
+    top: 60vh;
   }
 
   .mask {
@@ -122,12 +123,9 @@
     and (orientation: portrait) 
     and (-webkit-min-device-pixel-ratio: 1.5) 
     and (-webkit-max-device-pixel-ratio: 2.2) {
-      width: 668px;
-      height: 126px;
-      mask-size: 668px 126px;
-      left: calc(50% - 668px / 2);
-      background-size: contain;
-      animation: move-mask 6s linear 1 forwards; 
+      margin-left: -2200px;
+      width: 2000px;
+      height: 132px;
     }
   }
 
@@ -135,10 +133,6 @@
     position: fixed;
     left: calc(50% - 138.6rem / 2);
     z-index: 2;
-
-    img {
-      animation: none;
-    }
 
     @media only screen 
     and (min-width: 1024px) 
@@ -149,6 +143,7 @@
       left: calc(50% - 668px / 2);
       z-index: 2;
       top: 60vh;
+      animation: move-mask 6s linear 1 forwards; 
     }
 
   }
@@ -160,17 +155,6 @@
 
     100% {
       transform: translateX(100%);
-    }
-  }
-}
-
-@media (width <= 1024px) {
-  .inicial-text {
-    z-index: 2;
-    top: 60vh;
-
-    img {
-      animation: move-mask 6s linear 1 forwards; 
     }
   }
 }
