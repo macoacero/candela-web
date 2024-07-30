@@ -20,11 +20,7 @@
       min-height: 900px;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       flex-direction: column-reverse;
       justify-content: center;
       height: auto;
@@ -68,11 +64,7 @@
       min-height: 640px;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       width: 100%;
       min-height: 700px;
       margin-bottom: -30px;
@@ -126,11 +118,7 @@
         right: -8px;
       }
 
-      @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
         width: 400px; 
         height: auto;
         right: 0;
@@ -199,11 +187,7 @@
         top: 320px;
       }
 
-      @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
         top: 480px;
         left: 72px;
         width: 150px;
@@ -237,11 +221,7 @@
           top: 42px;
         }
 
-        @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
           width: 60px;
           height: 60px;
           top: 42px;
@@ -280,11 +260,7 @@
       text-align: center;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
         width: 100%;
         text-align: center;
       }
@@ -312,11 +288,7 @@
         font-size: 30px;
       }
 
-      @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
           font-size: 30px;
         }
 
@@ -347,11 +319,7 @@
         margin-top: 30px;
       }
 
-      @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
         font-size: 15px;
         margin-top: 30px;
       }

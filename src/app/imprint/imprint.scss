@@ -13,11 +13,7 @@
       top: 30px;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       top: 30px;
     }
   }
@@ -49,11 +45,7 @@
       right: 20px;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       top: 20px;
       right: 20px;
     }
@@ -93,11 +85,7 @@
       bottom: 100px;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       width: calc(100% - 20px);
       left: 10px;
       bottom: 100px;
@@ -122,11 +110,7 @@
     justify-content: center;
     }
     
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       width: 100%;
       position: absolute;
       z-index: 500;

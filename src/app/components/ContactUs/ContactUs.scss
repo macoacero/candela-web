@@ -43,11 +43,7 @@
   }
 
   
-  @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+  @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
     min-height: calc(100vh - 100px);
     max-height: 2000px;
     padding: 80px 10px 10.2px;
@@ -74,11 +70,7 @@
       padding: 0;
     }
 
-    @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+    @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
       padding: 0;
     }
 
@@ -116,11 +108,7 @@
         font-size: 20rem;
       }
 
-      @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
         font-size: 26rem;
       }
     }
@@ -181,11 +169,7 @@
         height: auto;
       }
 
-      @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
         width: calc(100vw - 20.6px);
         height: auto;
       }
@@ -223,11 +207,7 @@
           width: 180px;
         }
 
-        @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+        @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
           padding: 22px 0;
         }
 
@@ -255,11 +235,7 @@
               width: 100%;
             }
 
-            @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+            @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
               width: 120px
             }
         }
@@ -322,11 +298,7 @@
             padding: 5px 0;
           }
 
-          @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+          @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
             font-size: 14rem;
             padding: 8px 0;
             height: 80px;
@@ -382,11 +354,7 @@
                 margin-top: 16px;
               }
 
-              @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+              @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
                 margin-top: 16px;
               }
 
@@ -418,11 +386,7 @@
             padding: 6.2px 9.5px;
           }
 
-          @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+          @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
             padding: 6.2px 9.5px;
           }
         }

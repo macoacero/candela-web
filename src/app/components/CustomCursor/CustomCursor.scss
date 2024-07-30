@@ -5,11 +5,7 @@
   pointer-events: none;
   z-index: 999;
 
-  @media only screen 
-    and (width <= 824px) 
-    and (height >= 915px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+  @media only screen and (max-width: 824px) and (-webkit-min-device-pixel-ratio: 2.2) { 
     display: none;
   }
 
