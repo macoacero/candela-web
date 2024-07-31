@@ -154,7 +154,7 @@
     line-height: 1;
 
     @media screen and (width <= 1024px) and (orientation: portrait) {
-      font-size: 6rem;
+      font-size: 4rem;
       width: 200px;
       height: 200px;
       top: 472px;
@@ -211,10 +211,10 @@
       }
 
       @media only screen 
-    and (max-width: 450px) 
-    and (min-height: 840px)
-    and (-webkit-min-device-pixel-ratio: 2.2)
-    and (orientation: portrait) {
+      and (max-width: 450px) 
+      and (min-height: 840px)
+      and (-webkit-min-device-pixel-ratio: 2.2)
+      and (orientation: portrait) {
         width: 60px;
       }
 
